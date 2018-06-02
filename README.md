@@ -3,4 +3,4 @@ Demonstrações utilizadas na apresentação
 
 ### Slides
 
-[Escalando Microservices no Kubernetes](https://www.icloud.com/keynote/0GGt3v3cs19jzWzcsrOsFSVXA#VSSUMMIT2018V1)
+[Escalando Microservices no Kubernetes](https://erickwendel.github.io/palestra-escalando-microservicos-k8s/)
