@@ -1,0 +1,43 @@
+{
+  "apiVersion": "extensions/v1beta1",
+  "kind": "Deployment",
+  "metadata": {
+    "name": "api-heroes",
+    "labels": {
+      "app": "api-heroes"
+    }
+  },
+  "spec": {
+    "replicas": 1,
+    "template": {
+      "metadata": {
+        "labels": {
+          "app": "api-heroes"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "api-heroes",
+            "image": "erickwendel/nodejs-with-mongodb-example",
+            "ports": [
+              {
+                "containerPort": 4000
+              }
+            ],
+            "env": [
+              {
+                "name": "MONGO_URL",
+                "value": "mongosvc"
+              },
+              {
+                "name": "PORT",
+                "value": "4000"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
