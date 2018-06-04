@@ -28,7 +28,7 @@
             "env": [
               {
                 "name": "MONGO_URL",
-                "value": "mongosvc"
+                "value": "10.244.1.5"
               },
               {
                 "name": "PORT",

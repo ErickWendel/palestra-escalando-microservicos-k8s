@@ -8,7 +8,7 @@
     }
   },
   "spec": {
-    "replicas": 2,
+    "replicas": 1,
     "strategy": {
       "type": "RollingUpdate",
       "rollingUpdate": {
@@ -45,8 +45,8 @@
             },
             "resources": {
               "limits": {
-                "cpu": "50m",
-                "memory": "100Mi"
+                "cpu": "100m",
+                "memory": "150Mi"
               }
             },
             "ports": [
